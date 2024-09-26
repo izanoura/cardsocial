@@ -1,0 +1,28 @@
+@charset "UTF-8 ";
+/*conf tag universal */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* caixa principal */
+.container{
+    width: 100vh; /*largura*/
+    height: 100vh; /*altura*/
+    background-image: linear-gradient(#df3d0c, #272abe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    /*caixa ao centro*/
+.card{
+    width: 540px;
+    background-color: #df3d0c(9, 243, 24, 5);
+    border-radius: 16px;
+    /*alinhamento dos itens*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*sombra do box*/
+    box-shadow: #272abe(100, 100, 111, 0.2);
+}
