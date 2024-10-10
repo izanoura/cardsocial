@@ -3,13 +3,15 @@
 *{
     margin: 0;
     padding: 0;
+    color: #fff;
+    font-family: 'segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 /* caixa principal */
 .container{
     width: 100%; /*largura*/
     height: 100vh; /*altura*/
-    background-image: linear-gradient(#df3d0c, #272abe);
+    background-image: linear-gradient(#53924d, #27be6b);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +29,8 @@
     box-shadow: rgba(141, 9, 49, 0.2)0px 7px 29px 0px;
 }
 .profile-img{
-    width: 120px;
+    width: 130px;
+    height: 120px;
     border-radius: 50%;
     border: #1da126 5px solid;
 
@@ -35,4 +38,53 @@
     box-shadow: rgba(0, 0,0, 0.35) 0px 5px 15px;
     /* direnciona o img no eixo y */
     transform: translateY(-65px);
+}
+.container-text{
+    margin-top: -40px; /*espaçamento na parte superior para 
+    criar um espaço entre a bordar e o texto*/
+
+}
+
+h1.nome{
+    margin: 0;/*retira o espaçamento de margin*/
+    text-shadow: rgba(0 , 0 , 0 , 0.6) 0px 5px 1px ;/*cria uma
+     sobra em volta do texto, a propriedade precisa de: (cor,
+     deslo horizontal, deslo vertical, raio de desfoque)*/
+
+}
+h3.desc{
+    font-weight: 400;/*ajustar o tamanho da fonte*/
+    text-shadow: rgba(0, 0 , 0 , 0.6) 0px 5px 10px;/*cria um
+    sombra no texto*/
+}
+.andress-icon{
+    width: 22px;/*largura do caixa*/
+    filter: brightness(10); /* altera a opacidade da imagem
+    escala de 0 - 10*/
+}
+.socials {
+    margin: 30px;/*margem da tag 'div'*/
+}
+.socials a{
+    margin-right: 40px; /*margem da tag 'a' do lado direito*/
+
+}
+
+.socials a:last-child{
+    /*':last-chil' e um pseudo-elemento css
+    que selecionar o ultimo elemento filho*/
+    margin-right: 0px;/*retira a margem do ultimo icone do
+    lado esquedo*/
+}
+.socials img{
+    width: 50px;
+    transition: all .3s;
+    box-shadow: rgba(0, 0,0, 0.35)0px 5px 15px;
+    border-radius: 50%;
+}
+.socials img:hover{
+    transform: scale(110%);
+}
+.socials img:active{
+    transform: scale(100%);
 }
